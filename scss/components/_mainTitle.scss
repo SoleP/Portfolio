@@ -1,0 +1,71 @@
+
+%header {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing:.1em;
+    color: $txt-color; 
+    text-align: center;
+}
+
+/* ========= TITLE  ========= */
+ 
+
+ 
+#title {
+    background-image: url("img/background-ppl.png");
+    background-color: $bg-gr-opa;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 50px; 
+    margin-bottom: 2em;  
+    z-index: -1; 
+    text-align: center;
+    text-shadow: $shadow;
+
+    .name {
+        @extend %header ;
+
+        font-size: 4em;
+        border-top: 2px solid $txt-color;
+        margin: .8em 3em 0 3em;
+        padding: .2em 0;
+
+        @media screen and (max-width: 768px){
+            margin: 0.8em auto 0 auto;
+        }
+        
+    }
+
+    .subpage {
+        font-size: 2em;
+        border-top: none;
+        margin: 1em auto 0 auto;
+        padding: 1em auto 0 auto;
+        padding-top: .2em;
+    }
+
+    .subName {
+        @extend %header;
+        font-size: 2em;
+        
+        border-bottom: 2px solid $txt-color;
+        margin: .0 10em;
+        padding: .2em 0;
+
+        @media screen and (max-width: 768px){
+            margin: auto;
+        }
+    }
+   
+}
+
+
+
+
+
+
+/* ========= FIN TITLE  ========= */
+ 
+
+

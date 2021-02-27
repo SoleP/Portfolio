@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Style-->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500;1,700&display=swap" 
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;1,700&display=swap"   
+    rel="stylesheet"> 
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!--SEO-->
+    <meta name="description" content="I am a industrial designer. Development from research, concept, engineering to manufacturing. Creative. 3D modeling. UX/UI. Web development.">
+    <meta name="keywords" content="industrial designer, producto designer, development, UX, UI, 3D modeling, web development, portfolio">
+    <meta name="author" content="Soledad Priano">
+    <meta name="copyright" content="Soledad Priano">
+
+    <!--Open graph-->
+    <meta property="og:title" content="Soledad Priano Portfolio">
+    <meta property="og:descripcion" content="I am a industrial designer. Development from research, concept, engineering to manufacturing. Creative. 3D modeling. UX/UI. Web development.">
+    <meta property="og:imagen" content="img/portada.png">
+    <meta property="og:url" content="https://soledadpriano.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_EN">
+    
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+
+    <!--Nombre de Pestana-->
+    <title>About me</title>
+
+</head>
+
+
+
+<body>
+    
+
+    <!-- ========= Menu principal =========  - repite en todas las paginas (hay alguna forma de linkearlo?)-->
+
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-dark shadow p-2 mb-5 rounded" id="navbar">
+        <div class="container-fluid">
+
+            <!--Language-->
+            <a class="navbar-lang" href="" id="language">
+                <a class="nav-link dropdown-toggle text-white" href="" id="navbarDropdownMenuLang" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/icons/lang.png" alt="language" class="" with="30" height="30">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="navbarDropdownMenuLang">
+                    <li><a class="dropdown-item" href="portfolio-ES.html">Español</a></li>
+                    <li><a class="dropdown-item" href="portfolio-EN.html">English</a></li>
+                    <li><a class="dropdown-item" href="portfolio-ES.html">Italian</a></li>
+                </ul>
+            </a>
+
+            <button class="navbar-toggler" style="background-color: #fff;" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            
+            <!--Menu-->
+            <div class="navbar-menu container collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="index-EN.html" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index-EN.html" class="nav-link">About me</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a a class="nav-link dropdown-toggle text-white" href="portfolio-EN.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="bikes-EN.html">Furniture</a></li>
+                            <li><a class="dropdown-item" href="vertigo-EN.html">Metal</a></li>
+                            <li><a class="dropdown-item" href="proyect3.html">3D Models</a></li>
+                            <li><a class="dropdown-item" href="proyect4.html">Prototypes</a></li>
+                            <li><a class="dropdown-item" href="proyect5.html">Packaging</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="portfolio-EN.html" class="nav-link">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact" class="nav-link">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+                
+            <!--Social Media-->
+            <div class="socialMedia" id="socialMedia">
+                <ul class="navbar-nav flex-row ms-md-auto justify-content-flex-end">
+
+                                             
+                    <li class="nav-item">
+                        <a href="https://www.behance.net/" target="blank"><i class="fab fa-behance-square"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/soledad-priano/" target="blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="https://www.pinterest.com" target="blank"><i class="fab fa-pinterest-square"></i></a>
+                    </li>
+                        
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                    </li> <!--No anda IG : <i class="fab fa-instagram-square"></i> -->
+
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <!--  =========  FIN de Menu  ========= -->
+
+
+    <!-- ========= Cuerpo ========= -->
+
+        <main id="home container-fluid">
+
+            <!--  ========= Encabezado =========  -->
+            
+            <section  id="title" class="title container-fluid">
+                <h1 class="name subpage">About me</h1>
+                <h2 class="subName"></h2>
+            </section>
+
+            <!--  ========= FIN Encabezado =========  -->
+
+        <!-- ========= About ========= -->
+
+        <div class="container portfolioGrid">             
+
+            <div class="row"> 
+        
+                <div class="col-md">
+                    <img class="image-about" src="img/About-me/aboutMePic1.png" alt="">
+                </div>
+               
+                <div class="col-md">
+                    <img class="image-about" src="img/About-me/aboutMePic2.png" alt="">
+                </div>
+
+                <div class="col-md">
+                    <img class="image-about" src="img/About-me/aboutMePic3.png" alt="">
+                </div>
+
+                
+                <div class="col-md">
+                    <img class="image-about" src="img/About-me/aboutMePic4.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="row" > 
+
+                <div class="col-md">
+                    <img class="image-about" src="img/About-me/aboutMePic5.png" alt="">
+                </div>
+
+
+                <div class="col-md-6">
+                    <p>Hello I’m Sole, and I am an Industrial designer who loves
+                    to accept challenges every day. I enjoy all the steps of my profession, 
+                    from sketching, to 2D/3D computer modeling, to prototyping, etc. I believe 
+                    that the beauty of it all is to see an idea come to life, materialize. 
+                    I have been working in this industry for over six years, and it never ceases
+                    to amaze me. In this portfolio you’ll find a vast example of my work: simple 
+                    sketches, complex prototypes and models. Thank you for visiting!
+                    </p>
+                </div>               
+
+                <div class="col-md">
+                    <img class="image-about" src="img/About-me/aboutMePic6.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="row"> 
+
+                <div class="col-md">
+                    <img class="image-about" src="img/About-me/aboutMePic7.png" alt="">
+                </div>
+                
+                <div class="col-md">
+                    <img class="image-about" src="img/About-me/aboutMePic8.png" alt="">
+                </div>
+
+                <div class="col-md">
+                    <img class="image-about" src="img/About-me/aboutMePic9.png" alt="" >
+                </div>
+
+                <div class="col-md">
+                    <img class="image-about" src="img/About-me/aboutMePic10.png" alt="" >
+                </div>
+
+                
+
+            </div>
+
+            <div class="row"> 
+                <div class="col-md">
+                    <img class="image-about" src="img/About-me/aboutMePic11.png" alt="" >
+                </div>
+
+                <div class="col-md">
+                    <img class="image-about" src="img/About-me/aboutMePic12.png" alt="">
+                </div>
+               
+                <div class="col-md">
+                    <img class="image-about" src="img/About-me/aboutMePic13.png" alt="">
+                </div>
+
+                <div class="col-md">
+                    <img class="image-about" src="img/About-me/aboutMePic14.png" alt="">
+                </div>
+
+               
+
+            </div>
+                  
+        </section>
+  
+
+    </main>
+    
+<!-- ========= FIN Cuerpo ========= -->
+
+    
+        <!--  ========= Footer  ========= - Comparte con todas las paginas - IDEM MENU (Salvo "Submit") -->
+
+        <footer > 
+
+            <div id="contact container-fluid" class="contact-container d-flex justify-center;align-items: center;">
+                    
+                <div class="contact contact-button">
+                        <h4 class="contact">Contact Me</h4> 
+                </div>                        
+                
+                <form class="row g-3 contact-form container">
+
+                    <div class="col-md-6 name">
+                        <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Name" id="First-name" 
+                        aria-describedby="validationServer03Feedback" required>
+                        <div id="validationServer03Feedback" class="invalid-feedback">
+                            Please provide a Name. <!--Ver como ocultarlo-->
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 email">
+                        <input type="email" class="form-control" id="email" placeholder="email@email.com" required>
+                        <div id="validationServer03Feedback" class="invalid-feedback">
+                            Please provide a email. <!--Ver como ocultarlo-->
+                        </div>
+                    </div>
+
+                    <div class="form-floating message" > 
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
+                    </div>
+                                
+                    <div class="send" >
+                        <button type="submit" class="btn" >Send</button>
+                    </div>
+                    
+                </form>
+                    
+
+                <div class="sn-container"> 
+                    <div class="footer-sn d-flex" >
+                                            
+                        <div  class="icon">
+                            <a href="https://www.behance.net/" target="blank">
+                                <i class="fab fa-behance-square"></i>
+                            </a>
+                        </div>
+                
+                        <div  class="icon ">
+                            <a href="https://www.linkedin.com/in/soledad-priano/" target="blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+
+                        <div  class="icon ">
+                            <a href="https://www.pinterest.com" target="blank">
+                                <i class="fab fa-pinterest-square"></i>
+                            </a>
+                        </div>
+
+                        <div  class="icon">  <!--No anda IG : <i class="fab fa-instagram-square"></i> -->
+                            <a href="https://www.instagram.com/" target="blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+
+                    </div>                                                            
+                </div>
+                                                
+
+            </div>
+                
+            <div class="BackToTop-container"> 
+
+                <a class="arrowUp" >
+                    <i class="fas fa-angle-double-up"></i>
+                </a>
+
+                <a href="#navbar" class="backTopText text-secondary" >
+                    <p>Back to Top</p>
+                </a> 
+
+                <a class="arrowUp">
+                    <i class="fas fa-angle-double-up"></i>
+                </a>
+            </div>  
+            <!--  ========= Boton up  =========  -->
+
+            <div class="arrow-container">
+                <div  class="arrow-content" onclick="topFunction()" id="myBtn" title="Go to top">
+                    <a href="#navbar">
+                        <svg id="more-arrows">
+                            <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+                            <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+                            <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!--  ========= Boton up  =========  -->
+
+        </footer>
+    </body>
+</html> 

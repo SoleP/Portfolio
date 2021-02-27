@@ -1,0 +1,93 @@
+
+/* ========= NAVBAR / MENU  ========= */
+
+.navbar {
+    font-family: $font-lato;
+    margin: 0 2em;
+    transition: top 8s;
+    background-color: $bg-button;
+   
+    .container-fluid{
+
+        #language {        
+            
+            button {            
+                &:hover {
+                    color: $bg-solid; /*No toma el color*/
+                    cursor: pointer;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+        
+        .button {
+            justify-content: space-between;
+                
+            #navbarScroll {
+                justify-content: center;
+
+                a{
+                    padding: .5em 1em;
+                    letter-spacing: .1em;
+                }
+            }
+        }
+
+       .navbar-menu{
+            justify-content: center;
+
+            li{
+                &:hover{
+                    color: $bg-solid !important;  /*No toma el color*/
+                    cursor: pointer;
+                }
+
+                a{
+                    &:active{
+                    color: $bg-solid !important; 
+                    } 
+                }
+                
+            }
+        }
+
+        #socialMedia{
+         
+            ul{
+                li{
+                   a{
+                    color: $txt-color;
+                    padding: 0.5em;                          
+                        i{
+                            font-size: 1.5em;
+
+                            &:hover{
+                                color: $bg-solid;
+                            }
+                        }
+                    }
+                }
+            }
+            
+                      
+            @media screen and (max-width: 768px){
+                display: none;
+            }  
+            
+        }
+
+        .dropdown-menu {
+            a{
+                padding: .5em 1em;
+                letter-spacing: .1em;
+            }
+          
+        }
+       
+    }
+}
+
+/* ========= FIN NAVBAR / MENU  ========= */

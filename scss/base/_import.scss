@@ -1,0 +1,30 @@
+/*========= INDEX ============
+-NAVbar / Menu
+-Encabezado / Titulo
+-About me
+-Portfolio
+-Skills
+-Contact
+-Back to Top
+
+========= FIN INDEX ============*/
+
+/* Base */
+@import '../base/variables';
+
+
+/* Components */
+@import '../components/main';
+@import '../components/navbar';
+@import '../components/mainTitle';
+@import '../components/aboutMe';
+@import '../components/skills';
+@import '../components/portfolio';
+@import '../components/footer';
+@import '../components/arrowUp';
+@import '../components/aboutMePage';
+@import '../components/portfolioProjects';
+
+
+
+

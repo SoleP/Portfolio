@@ -1,0 +1,193 @@
+footer {
+    margin-top:50px;
+    width:100%;
+    height:100%;
+    background-color: $bg-button;
+
+    .contact-button{
+        z-index: 2;
+        display: flex;
+        align-items: center;
+         
+        h4{
+        writing-mode: vertical-lr; 
+        background-color: $bg-solid; 
+        padding: .5em; 
+        color: $txt-color;
+        font-family: $font-lato; 
+        position: relative;
+        height: fit-content; 
+        margin-left: 8em; 
+        letter-spacing: .2em;
+
+            @media screen and (max-width: 768px) {
+                position: absolute;
+                left: 0;
+                margin: 0;
+            }
+        }
+    }
+
+    .contact-form{
+        height: fit-content;
+        align-self: center;
+        margin: 2% -6em 2% -3.2em;
+        width: auto;
+        background-color: $txt-color;
+        z-index: 0;
+
+        @media screen and (max-width: 768px) {
+            height: fit-content;
+            margin: 2% 0;
+            background-color: white;
+            z-index: 0;
+        }
+
+        .inputs {
+            @media screen and (max-width: 768px) {
+            width: 100%;
+            margin-top: 0;
+            }
+        }
+
+        .name {
+            padding-left: 4em;
+
+            @media screen and (max-width: 768px) {
+                padding: 0 2em 0 4em;
+            }
+            
+            .invalid-feedback {
+                display: none;
+            }
+        }
+
+        .email {
+            padding-right: 2em;
+
+            @media screen and (max-width: 768px) {
+                padding-left: 4em;
+            }
+
+            .invalid-feedback {
+                display: none;
+            }
+        }
+
+        .message {
+            padding: 0 2em 0 4em;
+        }
+
+        .send {
+            display: flex;
+            justify-content: flex-end; 
+            padding: 0 2em 1em 0;
+
+            .btn {
+                background-color: $bg-solid;
+                color: $txt-color;
+                position: relative;
+                transition: 0.5s;
+
+                &:after {
+                    content: '»';
+                    position: absolute;
+                    opacity: 0;  
+                    top: auto;
+                    right: -20px;
+                    transition: 0.5s;
+                }
+                  
+                &:hover{
+                    padding-right: 24px;
+                    padding-left:8px;
+                }
+                  
+                &:hover:after {
+                    opacity: 1;
+                    right: 10px;
+                    color: $txt-color;
+                }
+            }
+        }
+    }
+
+
+    .sn-container{
+        margin: 2% 10% 2% 0;
+        background-color: $bg-solid;
+        padding: 4% 4% 4% 10%;
+        border-radius: .3em;
+        font-size: 3em;
+        color: $txt-color;
+        display: flex;
+        flex-flow: wrap;
+        max-width: 8em;
+
+        @media screen and (max-width: 768px) {
+            position: absolute;
+            right: 0;
+            padding: 5%;
+            padding-bottom: 2.5em;
+            font-size: 2em;
+            border-radius: 0;
+            margin: 0;
+            height: 85%;
+        }
+
+    
+        .footer-sn {
+            flex-flow: column wrap; 
+            
+            .icon {
+              
+                a {
+                   color: $txt-color;
+                               
+                    &:hover{
+                        color: $bg-gr-opa;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+    }
+
+    
+    .BackToTop-container {
+        align-items: baseline;
+        justify-content: center;
+        display: flex;
+        
+        a{
+            text-decoration: none;
+            color: $txt-color;
+            font-size: 1em;
+            padding: 0 .5em;
+
+            p{
+                color: $txt-color;
+                font-size: 1.5em;
+                
+                    &:hover  { 
+                    color: $bg-solid;
+                    transform: scale(1.1);
+                    cursor: pointer;
+                    }   
+            }
+        }
+
+        .backToTop {
+            font-family: $font-monse;
+            padding: 1rem;
+        }
+       
+    }
+
+}
+
+
+
+
+/* ========= FIN Footer ========= */

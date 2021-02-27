@@ -1,0 +1,229 @@
+/* ========= PORTFOLIO =============*/
+
+.clr {
+    clear: both;
+}
+
+.gallery-wrap {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallery-wrap h1 {
+    letter-spacing: 4px;
+}
+
+label {
+    width: 10%;
+    border: .1em solid $bg-solid;
+    letter-spacing: 2px;
+    padding: 0 .5rem; 
+    margin: 0 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .8s;
+    height: 2rem;
+    min-width: fit-content;
+    text-align: center;
+}
+
+label:hover {
+    background-color: $bg-solid;
+    color: $txt-color;
+}
+
+/*MOVIL*/
+@media screen and (max-width: 768px) {
+    .label {
+        width: 30%;
+        margin: 0;
+
+        &hover {
+            background-color: $bg-solid;
+        }
+    } 
+}
+
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + label{
+    background: $bg-solid;
+    color: $txt-color;
+}
+
+/*Filtros*/
+input[type="radio"][id="model"]:checked ~ .model,
+input[type="radio"][id="model"]:checked ~ .furniture,
+input[type="radio"][id="model"]:checked ~ .prototypes,
+input[type="radio"][id="model"]:checked ~ .packaging,
+input[type="radio"][id="model"]:checked ~ .metal {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: .5s;
+}
+input[type="radio"][id="renders"]:checked ~ .model,
+input[type="radio"][id="renders"]:checked ~ .furniture,
+input[type="radio"][id="renders"]:checked ~ .prototypes,
+input[type="radio"][id="renders"]:checked ~ .packaging,
+input[type="radio"][id="renders"]:checked ~ .metal {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: .5s;
+}
+input[type="radio"][id="furniture"]:checked ~ .model,
+input[type="radio"][id="furniture"]:checked ~ .model,
+input[type="radio"][id="furniture"]:checked ~ .prototypes,
+input[type="radio"][id="furniture"]:checked ~ .packaging,
+input[type="radio"][id="furniture"]:checked ~ .metal {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: .5s;
+}
+input[type="radio"][id="prototypes"]:checked ~ .model,
+input[type="radio"][id="prototypes"]:checked ~ .model,
+input[type="radio"][id="prototypes"]:checked ~ .furniture,
+input[type="radio"][id="prototypes"]:checked ~ .packaging,
+input[type="radio"][id="prototypes"]:checked ~ .metal {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: .5s;
+}
+input[type="radio"][id="packaging"]:checked ~ .model,
+input[type="radio"][id="packaging"]:checked ~ .model,
+input[type="radio"][id="packaging"]:checked ~ .furniture,
+input[type="radio"][id="packaging"]:checked ~ .prototypes,
+input[type="radio"][id="packaging"]:checked ~ .metal {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: .5s;
+}
+input[type="radio"][id="metal"]:checked ~ .renders,
+input[type="radio"][id="metal"]:checked ~ .furniture,
+input[type="radio"][id="metal"]:checked ~ .prototypes,
+input[type="radio"][id="metal"]:checked ~ .packaging,
+input[type="radio"][id="metal"]:checked ~ .model {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+
+.gallery-image {
+    width: 23%;
+    height: 300px;
+    float: left;
+    margin: 1%;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+        height: auto;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: .5s;
+        border: 10px;
+    }
+}
+
+
+
+
+/*Hover Section*/
+
+.gallery-image .each-item{
+    position:relative;
+    overflow:hidden;
+}
+
+.gallery-image:hover .cap2, .gallery-image:hover .cap1{
+    left:0px;
+}
+
+.cap1{
+    position:absolute;
+    width:100%;
+    height:70%;
+    background:rgba(255, 255, 255, 0.5);
+    top:0px;
+    left:-100%;
+    padding: 2em 1em;
+    transition: all .5s;
+    font-family: 'Lato', sans-serif;
+    color: $subtxt-color;
+
+    @media screen and (max-width: 768px) {
+        height: 75%;        
+    }
+
+        h3 {
+            @media screen and (max-width: 768px){
+                font-size: inherit;
+            }
+        }
+        p {
+            color: $subtxt-color;
+
+            @media screen and (max-width: 768px){
+                display: none;
+            }
+        }
+}   
+
+
+
+
+.cap2{
+    position:absolute;
+    width:100%;
+    height:30%;
+    background: $bg-solid;
+    bottom:0px;
+    left:100%;
+    padding: 2em 1em;
+    transition: all .5s;
+
+    @media screen and (max-width: 768px) {
+        height: 25%;
+        padding: 0;
+    }
+
+    a {
+        color: $txt-gr;
+        text-decoration: none;
+    
+        p{
+            color: $txt-color;
+            font-size: 1em;
+        }
+    }
+}
+
+
+
+
+
+/* ========== FIN PORTFOLIO =========*/
