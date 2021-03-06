@@ -53,15 +53,10 @@ body p {
   transition: top 8s;
   background-color: #343a40;
 }
-.navbar .container-fluid #language button:hover {
+.navbar .container-fluid #language:hover {
   color: #004d4d;
   /*No toma el color*/
   cursor: pointer;
-}
-@media screen and (max-width: 768px) {
-  .navbar .container-fluid #language {
-    display: none;
-  }
 }
 .navbar .container-fluid .button {
   justify-content: space-between;
@@ -104,6 +99,34 @@ body p {
   letter-spacing: 0.1em;
 }
 
+@media screen and (max-width: 768px) {
+  #lang-icon {
+    display: none;
+  }
+}
+
+#lang-movil {
+  display: none;
+}
+
+#lang-movil a:hover {
+  background-color: teal;
+  border-radius: 0.1em;
+}
+
+@media screen and (max-width: 768px) {
+  #lang-movil {
+    display: inline-flex;
+    position: absolute;
+    top: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #lang-movil a {
+    color: white;
+    padding: 0 0.2em;
+  }
+}
 /* ========= FIN NAVBAR / MENU  ========= */
 #title .subName, #title .name {
   font-family: "Montserrat", sans-serif;
@@ -114,7 +137,7 @@ body p {
 
 /* ========= TITLE  ========= */
 #title {
-  background-image: url("img/background-ppl.png");
+  background-image: url(/img/imagen.png);
   background-color: rgba(44, 38, 38, 0.5);
   background-position: center center;
   background-repeat: no-repeat;
@@ -127,9 +150,9 @@ body p {
   text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 #title .name {
-  font-size: 4em;
+  font-size: 3em;
   border-top: 2px solid white;
-  margin: 0.8em 3em 0 3em;
+  margin: 0.8em 15% 0 15%;
   padding: 0.2em 0;
 }
 @media screen and (max-width: 768px) {
@@ -145,9 +168,9 @@ body p {
   padding-top: 0.2em;
 }
 #title .subName {
-  font-size: 2em;
+  font-size: 1.5em;
   border-bottom: 2px solid white;
-  margin: 0 10em;
+  margin: 0 25%;
   padding: 0.2em 0;
 }
 @media screen and (max-width: 768px) {
@@ -197,6 +220,7 @@ body p {
     display: flex;
     grid-column: 2;
     grid-row: 2;
+    background-color: white;
   }
 }
 #about .container-about .container-img .icon {
@@ -253,9 +277,9 @@ body p {
 @media screen and (max-width: 768px) {
   #about .container-about .container-text .readMore {
     position: absolute;
-    left: 29em;
-    width: 8em;
-    top: -7em;
+    left: 90%;
+    width: fit-content;
+    top: -70%;
   }
 }
 #about .container-about .container-text .readMore .button-v {
@@ -447,20 +471,6 @@ input[type=radio]:checked + label {
 }
 
 /*Filtros*/
-input[type=radio][id=model]:checked ~ .model,
-input[type=radio][id=model]:checked ~ .furniture,
-input[type=radio][id=model]:checked ~ .prototypes,
-input[type=radio][id=model]:checked ~ .packaging,
-input[type=radio][id=model]:checked ~ .metal {
-  width: 0;
-  height: 0;
-  padding: 0;
-  margin: 0;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-input[type=radio][id=renders]:checked ~ .model,
 input[type=radio][id=renders]:checked ~ .furniture,
 input[type=radio][id=renders]:checked ~ .prototypes,
 input[type=radio][id=renders]:checked ~ .packaging,
@@ -473,8 +483,7 @@ input[type=radio][id=renders]:checked ~ .metal {
   transition: 0.5s;
 }
 
-input[type=radio][id=furniture]:checked ~ .model,
-input[type=radio][id=furniture]:checked ~ .model,
+input[type=radio][id=furniture]:checked ~ .renders,
 input[type=radio][id=furniture]:checked ~ .prototypes,
 input[type=radio][id=furniture]:checked ~ .packaging,
 input[type=radio][id=furniture]:checked ~ .metal {
@@ -486,8 +495,7 @@ input[type=radio][id=furniture]:checked ~ .metal {
   transition: 0.5s;
 }
 
-input[type=radio][id=prototypes]:checked ~ .model,
-input[type=radio][id=prototypes]:checked ~ .model,
+input[type=radio][id=prototypes]:checked ~ .renders,
 input[type=radio][id=prototypes]:checked ~ .furniture,
 input[type=radio][id=prototypes]:checked ~ .packaging,
 input[type=radio][id=prototypes]:checked ~ .metal {
@@ -499,8 +507,7 @@ input[type=radio][id=prototypes]:checked ~ .metal {
   transition: 0.5s;
 }
 
-input[type=radio][id=packaging]:checked ~ .model,
-input[type=radio][id=packaging]:checked ~ .model,
+input[type=radio][id=packaging]:checked ~ .renders,
 input[type=radio][id=packaging]:checked ~ .furniture,
 input[type=radio][id=packaging]:checked ~ .prototypes,
 input[type=radio][id=packaging]:checked ~ .metal {
@@ -515,8 +522,7 @@ input[type=radio][id=packaging]:checked ~ .metal {
 input[type=radio][id=metal]:checked ~ .renders,
 input[type=radio][id=metal]:checked ~ .furniture,
 input[type=radio][id=metal]:checked ~ .prototypes,
-input[type=radio][id=metal]:checked ~ .packaging,
-input[type=radio][id=metal]:checked ~ .model {
+input[type=radio][id=metal]:checked ~ .packaging {
   width: 0;
   height: 0;
   padding: 0;

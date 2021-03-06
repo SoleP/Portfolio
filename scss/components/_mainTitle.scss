@@ -1,4 +1,3 @@
-
 %header {
     font-family: 'Montserrat', sans-serif;
     letter-spacing:.1em;
@@ -11,7 +10,7 @@
 
  
 #title {
-    background-image: url("img/background-ppl.png");
+    background-image: url(/img/imagen.png);
     background-color: $bg-gr-opa;
     background-position: center center;
     background-repeat: no-repeat;
@@ -26,9 +25,9 @@
     .name {
         @extend %header ;
 
-        font-size: 4em;
+        font-size: 3em;
         border-top: 2px solid $txt-color;
-        margin: .8em 3em 0 3em;
+        margin: .8em 15% 0 15%;
         padding: .2em 0;
 
         @media screen and (max-width: 768px){
@@ -47,10 +46,10 @@
 
     .subName {
         @extend %header;
-        font-size: 2em;
+        font-size: 1.5em;
         
         border-bottom: 2px solid $txt-color;
-        margin: .0 10em;
+        margin: .0 25%;
         padding: .2em 0;
 
         @media screen and (max-width: 768px){

@@ -54,19 +54,7 @@ input[type="radio"]:checked + label{
 }
 
 /*Filtros*/
-input[type="radio"][id="model"]:checked ~ .model,
-input[type="radio"][id="model"]:checked ~ .furniture,
-input[type="radio"][id="model"]:checked ~ .prototypes,
-input[type="radio"][id="model"]:checked ~ .packaging,
-input[type="radio"][id="model"]:checked ~ .metal {
-    width: 0;
-    height: 0;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    transition: .5s;
-}
-input[type="radio"][id="renders"]:checked ~ .model,
+
 input[type="radio"][id="renders"]:checked ~ .furniture,
 input[type="radio"][id="renders"]:checked ~ .prototypes,
 input[type="radio"][id="renders"]:checked ~ .packaging,
@@ -78,8 +66,8 @@ input[type="radio"][id="renders"]:checked ~ .metal {
     opacity: 0;
     transition: .5s;
 }
-input[type="radio"][id="furniture"]:checked ~ .model,
-input[type="radio"][id="furniture"]:checked ~ .model,
+
+input[type="radio"][id="furniture"]:checked ~ .renders,
 input[type="radio"][id="furniture"]:checked ~ .prototypes,
 input[type="radio"][id="furniture"]:checked ~ .packaging,
 input[type="radio"][id="furniture"]:checked ~ .metal {
@@ -90,8 +78,8 @@ input[type="radio"][id="furniture"]:checked ~ .metal {
     opacity: 0;
     transition: .5s;
 }
-input[type="radio"][id="prototypes"]:checked ~ .model,
-input[type="radio"][id="prototypes"]:checked ~ .model,
+
+input[type="radio"][id="prototypes"]:checked ~ .renders,
 input[type="radio"][id="prototypes"]:checked ~ .furniture,
 input[type="radio"][id="prototypes"]:checked ~ .packaging,
 input[type="radio"][id="prototypes"]:checked ~ .metal {
@@ -102,8 +90,8 @@ input[type="radio"][id="prototypes"]:checked ~ .metal {
     opacity: 0;
     transition: .5s;
 }
-input[type="radio"][id="packaging"]:checked ~ .model,
-input[type="radio"][id="packaging"]:checked ~ .model,
+
+input[type="radio"][id="packaging"]:checked ~ .renders,
 input[type="radio"][id="packaging"]:checked ~ .furniture,
 input[type="radio"][id="packaging"]:checked ~ .prototypes,
 input[type="radio"][id="packaging"]:checked ~ .metal {
@@ -117,8 +105,7 @@ input[type="radio"][id="packaging"]:checked ~ .metal {
 input[type="radio"][id="metal"]:checked ~ .renders,
 input[type="radio"][id="metal"]:checked ~ .furniture,
 input[type="radio"][id="metal"]:checked ~ .prototypes,
-input[type="radio"][id="metal"]:checked ~ .packaging,
-input[type="radio"][id="metal"]:checked ~ .model {
+input[type="radio"][id="metal"]:checked ~ .packaging {
     width: 0;
     height: 0;
     padding: 0;

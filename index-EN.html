@@ -57,24 +57,33 @@
 
             <!--Language-->
             <a class="navbar-lang" href="" id="language">
-                <a class="nav-link dropdown-toggle text-white" href="" id="navbarDropdownMenuLang" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="img/icons/lang.png" alt="language" class="" with="30" height="30">
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="navbarDropdownMenuLang">
-                    <li><a class="dropdown-item" href="index-ES.html">Español</a></li>
-                    <li><a class="dropdown-item" href="index-EN.html">English</a></li>
-                    <li><a class="dropdown-item" href="index-ES.html">Italian</a></li>
-                </ul>
+
+                <div class="lang-icon" id="lang-icon">
+                    <a class="nav-link dropdown-toggle text-white" href="" id="navbarDropdownMenuLang" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/icons/lang.png" alt="language" class="" with="30" height="30">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="navbarDropdownMenuLang">
+                        <li><a class="dropdown-item" href="index-ES.html">Español</a></li>
+                        <li><a class="dropdown-item" href="index-EN.html">English</a></li>
+                        <li><a class="dropdown-item" href="index-ES.html">Italian</a></li>
+                    </ul>
+                </div>
+
+                <div class="lang-movil" id="lang-movil">
+                    <li><a class="dropdown-item" href="index-ES.html">ES</a></li>
+                    <li><a class="dropdown-item" href="index-EN.html">EN</a></li>
+                    <li><a class="dropdown-item" href="index-ES.html">IT</a></li>
+                </div>
             </a>
 
             <button class="navbar-toggler" style="background-color: #fff;" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#navbarScroll #language #socialMedia" aria-controls="navbarScroll socialMedia" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon text-white"></span>
+                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             
             <!--Menu-->
             <div class="navbar-menu container collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <ul class="navbar-nav my-2 my-lg-0" style="--bs-scroll-height: 100px;">
                 
                     <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="index-EN.html" class="nav-link">Home</a>
@@ -114,7 +123,7 @@
 
                                              
                     <li class="nav-item">
-                        <a href="https://www.behance.net/" target="blank"><i class="fab fa-behance-square"></i></a>
+                        <a href="https://www.behance.net/soleadadpriano" target="blank"><i class="fab fa-behance-square"></i></a>
                     </li>
 
                     <li class="nav-item">
@@ -122,11 +131,11 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="https://www.pinterest.com" target="blank"><i class="fab fa-pinterest-square"></i></a>
+                        <a href="https://ar.pinterest.com/SoleP89" target="blank"><i class="fab fa-pinterest-square"></i></a>
                     </li>
                         
                     <li class="nav-item">
-                        <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/travell.arg/" target="blank"><i class="fab fa-instagram"></i></a>
                     </li> <!--No anda IG : <i class="fab fa-instagram-square"></i> -->
 
 
@@ -142,7 +151,7 @@
 
     <!-- ========= Cuerpo ========= -->
 
-    <main id="home container-fluid">
+    <main id="home">
 
         <!--  ========= Encabezado =========  -->
         
@@ -183,7 +192,7 @@
                     </div>
                     
                     <div class="button readMore">
-                        <a href="about-EN.html" class="button-v btn btn-primary">Know More</a>                      </a>
+                        <a href="about-EN.html" class="button-v btn btn-primary">Know More</a>
                     </div>
                     <div class="aboutMe">
                         <h4 class="title">About me</h4>
@@ -200,7 +209,7 @@
 
         <!--  ========= Skills =========  -->
         
-        <section class="skills container-fluid" data-scroll-index="1">
+        <section id="skills" class="skills container-fluid" data-scroll-index="1">
             <div class="section-skills pos-re">
                 <div class="container">
                     <div class="row">
@@ -259,33 +268,29 @@
                 <!-- filter links -->
                 <div class="buttons-container filtering mb-30 col-sm-12">
                     
-                <input type="radio" id="reset" checked="checked" name="color" />
+                <input type="radio" id="reset" checked="checked" name="portfolio" />
                 <label for="reset" class="shadow rounded">All</label>
                     
-                <input type="radio" id="model" name="color" />
-                <label for="model" class="shadow rounded ">3D Models</label>
-                        
-                <input type="radio" id="renders" name="color" />
+                <input type="radio" id="renders" name="portfolio" />
                 <label for="renders" class="shadow rounded">Renders</label>
 
-                <input type="radio" id="furniture" name="color" />
+                <input type="radio" id="furniture" name="portfolio" />
                 <label for="furniture" class="shadow rounded">Furniture</label>
 
-                <input type="radio" id="prototypes" name="color" />
+                <input type="radio" id="prototypes" name="portfolio" />
                 <label for="prototypes" class="shadow rounded ">Prototypes</label>
 
-                <input type="radio" id="packaging" name="color" />
+                <input type="radio" id="packaging" name="portfolio" />
                 <label for="packaging" class="shadow rounded " >Packaging</label>
 
-                <input type="radio" id="metal" name="color" />
+                <input type="radio" id="metal" name="portfolio" />
                 <label for="metal" class="shadow rounded" >Metal</label>
 
-                            
                 <div class="clr clearfix"></div>
 
-                <div class="gallery-image property">
+                <div class="gallery-image prototypes">
                     <div class="each-item">
-                        <img class="port-image" src="img/Portfolio/vertigo/vertigo1-01.png" alt="metal product design"/>
+                        <img class="port-image" src="img/Portfolio/vertigo/vertigo1-01.png" alt="Prototype of a window cleaner"/>
                         <div class="cap1">
                             <h3>Vertigo</h3>
                             <p>Develop of a widnow cleanning</p>
@@ -298,7 +303,7 @@
 
                 <div class="gallery-image renders">
                     <div class="each-item">
-                        <img class="port-image" src="img/Portfolio/bicicletero-01.png" alt="3D product design"/>
+                        <img class="port-image " src="img/Portfolio/bicicletero-01.png" alt="Bicycle station with publicity for a city "/>
                         <div class="cap1">
                             <h3>Biclte station</h3>
                             <p>Desing and render for Montevide goverment (Uruguay)</p>
@@ -309,9 +314,9 @@
                     </div>
                 </div>
 
-                <div class="gallery-image model packaging metal prototype">
+                <div class="gallery-image renders metal">
                     <div class="each-item">
-                        <img class="port-image" src="img/Portfolio/Metal-01.png" alt="3D product design"/>
+                        <img class="port-image" src="img/Portfolio/Metal-01.png" alt="3D product design of a metal box"/>
                         <div class="cap1">
                             <h3>Box for PCV</h3>
                             <p>Laser cut metal and cnc creation</p>
@@ -322,12 +327,12 @@
                     </div>
                 </div>
 
-                <div class="gallery-image  packaging model">
+                <div class="gallery-image packaging render">
                     <div class="each-item">
-                        <img class="port-image" src="img/Portfolio/Packaging-01.png" alt="furniture design"/>
+                        <img class="port-image" src="img/Portfolio/Packaging-01.png" alt="Packaging for coconuts milk brand"/>
                         <div class="cap1">
                             <h3>Coconuts Milk</h3>
-                            <p>Design and develop of packaging and exibition stand</p>
+                            <p>Design and develop of packaging</p>
                         </div>
                         <div class="cap2">
                             <a href="vertigo-en.html" class="text-center"><p class="text-center">See more</p></a>
@@ -335,9 +340,9 @@
                     </div>
                 </div>
 
-                <div class="gallery-image render model">
+                <div class="gallery-image render">
                     <div class="each-item">
-                        <img class="port-image" src="img/Portfolio/Render-01.png" alt="prototype of a metal product design"/>
+                        <img class="port-image" src="img/Portfolio/Render-01.png" alt="3D design model of a magic box for Steampunk style"/>
                         <div class="cap1">
                             <h3>Design Cinema</h3>
                             <p>3D Modeling and render</p>
@@ -348,9 +353,9 @@
                     </div>
                 </div>
 
-                <div class="gallery-image model furniture packaging stand">
+                <div class="gallery-image furniture">
                     <div class="each-item">
-                        <img class="port-image" src="img/Portfolio/Stand-01.png" alt="3D metal product design"/>
+                        <img class="port-image" src="img/Portfolio/Stand-01.png" alt="Exibition stand for coconuts milk product"/>
                         <div class="cap1">
                             <h3>Coconuts Milk</h3>
                             <p>Design and develop of packaging and exibition stand</p>
@@ -361,9 +366,9 @@
                     </div>
                 </div>
 
-                <div class="gallery-image prototype">
+                <div class="gallery-image prototypes">
                     <div class="each-item">
-                        <img class="port-image" src="img/Portfolio/Uoa-01.png" alt="packaging design"/>
+                        <img class="port-image" src="img/Portfolio/Uoa-01.png" alt="Design and funcional prototype of a babay carryt bag"/>
                         <div class="cap1">
                             <h3>UPA!</h3>
                             <p>Baby carring prototype</p>
@@ -376,7 +381,7 @@
 
                 <div class="gallery-image renders">
                     <div class="each-item">
-                        <img class="port-image" src="img/port.png" alt="3D render of product design"/>
+                        <img class="port-image" src="img/aboutme.png" alt="3D render of product design"/>
                         <div class="cap1">
                             <h3>Diseno de RENDER</h3>
                             <p>Familia de producto de leche de coco</p>
@@ -387,9 +392,9 @@
                     </div>
                 </div>
 
-                <div class="gallery-image model">
+                <div class="gallery-image metal">
                     <div class="each-item">
-                        <img class="port-image" src="img/port.png" alt="3d product design"/>
+                        <img class="port-image prototypes" src="img/aboutme.png" alt="3d product design"/>
                         <div class="cap1">
                             <h3>Diseno MODEL</h3>
                             <p>Familia de producto de leche de coco</p>
@@ -416,7 +421,7 @@
 
     <footer > 
 
-        <div id="contact container-fluid" class="contact-container d-flex justify-center;align-items: center;">
+        <div id="contact" class="container-fluid contact-container d-flex justify-center;align-items: center;">
                 
             <div class="contact contact-button">
                     <h4 class="contact">Contact Me</h4> 
@@ -489,7 +494,7 @@
                 <i class="fas fa-angle-double-up"></i>
             </a>
 
-            <a href="#navbar" class="backTopText text-secondary" >
+            <a href="#home" class="backTopText text-secondary" >
                 <p>Back to Top</p>
             </a> 
 
@@ -501,7 +506,7 @@
 
         <div class="arrow-container">
             <div  class="arrow-content" onclick="topFunction()" id="myBtn" title="Go to top">
-                <a href="#navbar">
+                <a href="#home">
                     <svg id="more-arrows">
                         <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
                         <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>

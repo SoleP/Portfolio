@@ -10,16 +10,10 @@
     .container-fluid{
 
         #language {        
-            
-            button {            
-                &:hover {
+
+            &:hover {
                     color: $bg-solid; /*No toma el color*/
                     cursor: pointer;
-                }
-            }
-
-            @media screen and (max-width: 768px) {
-                display: none;
             }
         }
         
@@ -87,6 +81,38 @@
           
         }
        
+    }
+}
+
+
+#lang-icon{
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+       
+#lang-movil {
+    display: none;
+}
+
+#lang-movil a:hover {
+    background-color: teal;
+    border-radius: .1em;
+}
+
+
+@media screen and (max-width: 768px) {
+    #lang-movil {
+    display: inline-flex;
+    position: absolute;
+    top: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #lang-movil a{
+    color: $txt-color;
+    padding: 0 .2em;
     }
 }
 
