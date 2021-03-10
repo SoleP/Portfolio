@@ -47,7 +47,13 @@
 
 <body>
     
-
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 
     <!-- ========= Menu principal =========  - repite en todas las paginas (hay alguna forma de linkearlo?)-->
@@ -249,158 +255,93 @@
         
         <!--  ========= Portfolio =========  -->
          
-        <section class="portfolio" id="portfolio">
-           
-            <div class="gallery-wrap">
-                <!-- <h3>Portfolio</h3> -->
-
-                <!-- filter links -->
-                <div class="buttons-container filtering mb-30 col-sm-12">
-                    
-                <input type="radio" id="reset" checked="checked" name="color" />
-                <label for="reset" class="shadow rounded">Todos</label>
-                    
-                <input type="radio" id="model" name="color" />
-                <label for="model" class="shadow rounded ">Modelado 3D</label>
-                        
-                <input type="radio" id="renders" name="color" />
-                <label for="renders" class="shadow rounded">Renders</label>
-
-                <input type="radio" id="furniture" name="color" />
-                <label for="furniture" class="shadow rounded">Muebles</label>
-
-                <input type="radio" id="prototypes" name="color" />
-                <label for="prototypes" class="shadow rounded ">Prototipos</label>
-
-                <input type="radio" id="packaging" name="color" />
-                <label for="packaging" class="shadow rounded " >Packaging</label>
-
-                <input type="radio" id="metal" name="color" />
-                <label for="metal" class="shadow rounded" >Metal</label>
-
-                            
-                <div class="clr clearfix"></div>
-
-                <div class="gallery-image metal">
-                    <div class="each-item">
-                        <img class="port-image" src="img/port.png" alt="metal product design"/>
-                        <div class="cap1">
-                            <h3>Diseno de METAL</h3>
-                            <p>Familia de producto de leche de coco</p>
-                        </div>
-                        <div class="cap2">
-                            <a href="vertigo-EN.html" class="text-center"><p class="text-center">See more</p></a>
-                        </div>
-                    </div>
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+      
+              <div class="section-title">
+                <h2>Portfolio</h2>
+                <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit</p>
+              </div>
+      
+              <div class="row">
+                <div class="col-lg-12">
+                  <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-3d">3D Model</li>
+                    <li data-filter=".filter-render">Renders</li>
+                    <li data-filter=".filter-proto">prototype</li>
+                    <li data-filter=".filter-pack">Packaging</li>
+                    <li data-filter=".filter-metal">Metal</li>
+                  </ul>
                 </div>
-
-                <div class="gallery-image renders">
-                    <div class="each-item">
-                        <img class="port-image" src="img/port.png" alt="3D product design"/>
-                        <div class="cap1">
-                            <h3>Diseno de RENDER</h3>
-                            <p>Familia de producto de leche de coco</p>
-                        </div>
-                        <div class="cap2">
-                            <a href="vertigo-en.html" class="text-center"><p class="text-center">See more</p></a>
-                        </div>
-                    </div>
+              </div>
+      
+              <div class="row portfolio-container">
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="img/Portfolio/bicicletero-01.png" class="img-fluid" alt="">
+                      <a href="img/Portfolio/bicicletero-01.png" data-gallery="portfolioGallery" class="link-preview portfolio-lightbox" title="Preview"><i class="bx bx-plus"></i></a>
+                      <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                    </figure>
+                    <div class="cap1">
+                      <h3>Diseno de METAL</h3>
+                      <p>Familia de producto de leche de coco</p>
+                  </div>
+                  <div class="cap2">
+                      <a href="vertigo-EN.html" class="text-center"><p class="text-center">See more</p></a>
+                  </div>
+                  </div>
                 </div>
-
-                <div class="gallery-image model">
-                    <div class="each-item">
-                        <img class="port-image" src="img/port.png" alt="3D product design"/>
-                        <div class="cap1">
-                            <h3>Diseno de MODEL</h3>
-                            <p>Familia de producto de leche de coco</p>
-                        </div>
-                        <div class="cap2">
-                            <a href="vertigo-en.html" class="text-center"><p class="text-center">See more</p></a>
-                        </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="img/Portfolio/Metal-01.png" class="img-fluid" alt="">
+                      <a href="img/Portfolio/Metal-01.png" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                      <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                    </figure>
+      
+                    <div class="portfolio-info">
+                      <h4><a href="portfolio-details.html">Web 3</a></h4>
+                      <p>Web</p>
                     </div>
+                  </div>
                 </div>
-
-                <div class="gallery-image furniture">
-                    <div class="each-item">
-                        <img class="port-image" src="img/port.png" alt="furniture design"/>
-                        <div class="cap1">
-                            <h3>Diseno de FURNITURE</h3>
-                            <p>Familia de producto de leche de coco</p>
-                        </div>
-                        <div class="cap2">
-                            <a href="vertigo-en.html" class="text-center"><p class="text-center">See more</p></a>
-                        </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="img/Portfolio/Packaging-01.png" class="img-fluid" alt="">
+                      <a href="img/Portfolio/Packaging-01.png" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                      <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                    </figure>
+      
+                    <div class="portfolio-info">
+                      <h4><a href="portfolio-details.html">App 2</a></h4>
+                      <p>App</p>
                     </div>
+                  </div>
                 </div>
-
-                <div class="gallery-image prototypes">
-                    <div class="each-item">
-                        <img class="port-image" src="img/port.png" alt="prototype of a metal product design"/>
-                        <div class="cap1">
-                            <h3>Diseno PROTOTY</h3>
-                            <p>Familia de producto de leche de coco</p>
-                        </div>
-                        <div class="cap2">
-                            <a href="vertigo-en.html" class="text-center"><p class="text-center">See more</p></a>
-                        </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="img/Portfolio/Render-01.png" class="img-fluid" alt="">
+                      <a href="img/Portfolio/Render-01.png" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
+                      <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                    </figure>
+      
+                    <div class="portfolio-info">
+                      <h4><a href="portfolio-details.html">Card 2</a></h4>
+                      <p>Card</p>
                     </div>
-                </div>
-
-                <div class="gallery-image model">
-                    <div class="each-item">
-                        <img class="port-image" src="img/port.png" alt="3D metal product design"/>
-                        <div class="cap1">
-                            <h3>Diseno de MODEL</h3>
-                            <p>Familia de producto de leche de coco</p>
-                        </div>
-                        <div class="cap2">
-                            <a href="vertigo-en.html" class="text-center"><p class="text-center">See more</p></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-image packaging">
-                    <div class="each-item">
-                        <img class="port-image" src="img/port.png" alt="packaging design"/>
-                        <div class="cap1">
-                            <h3>Diseno de PACK</h3>
-                            <p>Familia de producto de leche de coco</p>
-                        </div>
-                        <div class="cap2">
-                            <a href="vertigo-en.html" class="text-center"><p class="text-center">See more</p></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-image renders">
-                    <div class="each-item">
-                        <img class="port-image" src="img/port.png" alt="3D render of product design"/>
-                        <div class="cap1">
-                            <h3>Diseno de RENDER</h3>
-                            <p>Familia de producto de leche de coco</p>
-                        </div>
-                        <div class="cap2">
-                            <a href="vertigo-en.html" class="text-center"><p class="text-center">See more</p></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-image model">
-                    <div class="each-item">
-                        <img class="port-image" src="img/port.png" alt="3d product design"/>
-                        <div class="cap1">
-                            <h3>Diseno MODEL</h3>
-                            <p>Familia de producto de leche de coco</p>
-                        </div>
-                        <div class="cap2">
-                            <a href="vertigo-en.html" class="text-center"><p class="text-center">See more</p></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="clr"></div>
+                  </div>
+                </div> 
 
             </div>
+      
         </section>
         
         <!--  ========= FIN Portfolio =========  -->

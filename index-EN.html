@@ -47,10 +47,7 @@
 
 <body>
     
-
-
-
-    <!-- ========= Menu principal =========  - repite en todas las paginas (hay alguna forma de linkearlo?)-->
+    <!-- ========= Menu principal ========= -->
 
     <nav class="navbar fixed-top navbar-expand-md navbar-light bg-dark shadow p-2 mb-5 rounded" id="navbar">
         <div class="container-fluid">
@@ -120,7 +117,6 @@
             <!--Social Media-->
             <div class="socialMedia" id="socialMedia">
                 <ul class="navbar-nav flex-row ms-md-auto justify-content-flex-end">
-
                                              
                     <li class="nav-item">
                         <a href="https://www.behance.net/soleadadpriano" target="blank"><i class="fab fa-behance-square"></i></a>
@@ -129,15 +125,14 @@
                     <li class="nav-item">
                         <a href="https://www.linkedin.com/in/soledad-priano/" target="blank"><i class="fab fa-linkedin"></i></a>
                     </li>
-
-                    <li class="nav-item">
-                        <a href="https://ar.pinterest.com/SoleP89" target="blank"><i class="fab fa-pinterest-square"></i></a>
-                    </li>
-                        
+                                         
                     <li class="nav-item">
                         <a href="https://www.instagram.com/travell.arg/" target="blank"><i class="fab fa-instagram"></i></a>
                     </li> <!--No anda IG : <i class="fab fa-instagram-square"></i> -->
 
+                    <li class="nav-item">
+                        <a href="https://github.com/SoleP" target="blank"><i class="fab fa-github"></i></a>
+                    </li>
 
                 </ul>
             </div>
@@ -417,77 +412,40 @@
     <!-- ================== FIN Cuerpo ================== -->
 
     
-    <!--  ========= Footer  ========= - Comparte con todas las paginas - IDEM MENU (Salvo "Submit") -->
+    <!-- ======= Footer ======= -->
 
-    <footer > 
+    <footer id="footer">
 
-        <div id="contact" class="container-fluid contact-container d-flex justify-center;align-items: center;">
-                
-            <div class="contact contact-button">
-                    <h4 class="contact">Contact Me</h4> 
-            </div>                        
-            
-            <form class="row g-3 contact-form container">
-
-                <div class="col-md-6 name">
-                    <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Name" id="First-name" 
-                    aria-describedby="validationServer03Feedback" required>
-                    <div id="validationServer03Feedback" class="invalid-feedback">
-                        Please provide a Name. <!--Ver como ocultarlo-->
-                    </div>
+        <div class="background ">
+            <div class="footer-top container">
+                <div class="footer-contact">
+                    <h4>Soledad Priano</h4>
+                    <p>Industrial Designer</p>
+                    <strong>Email:</strong> soledadpriano@gmail.com<br>
                 </div>
-
-                <div class="col-md-6 email">
-                    <input type="email" class="form-control" id="email" placeholder="email@email.com" required>
-                    <div id="validationServer03Feedback" class="invalid-feedback">
-                        Please provide a email. <!--Ver como ocultarlo-->
-                    </div>
-                </div>
-
-                <div class="form-floating message" > 
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
-                </div>
-                            
-                <div class="send" >
-                    <button type="submit" class="btn" >Send</button>
-                </div>
-                
-            </form>
-                   
-
-            <div class="sn-container"> 
-                <div class="footer-sn d-flex" >
-                                           
-                    <div  class="icon">
-                        <a href="https://www.behance.net/" target="blank">
-                            <i class="fab fa-behance-square"></i>
-                        </a>
-                    </div>
-            
-                    <div  class="icon ">
-                        <a href="https://www.linkedin.com/in/soledad-priano/" target="blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-        
-                    <div  class="icon ">
-                        <a href="https://www.pinterest.com" target="blank">
-                            <i class="fab fa-pinterest-square"></i>
-                        </a>
-                    </div>
-
-                    <div  class="icon">  <!--No anda IG : <i class="fab fa-instagram-square"></i> -->
-                        <a href="https://www.instagram.com/" target="blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-
-                </div>                                                            
             </div>
-                                              
-       
-        </div>
             
+            <div class="socialFooter container d-md-flex">
+                <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                   
+                    <a href="https://www.behance.net/" target="blank">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/soledad-priano/" target="blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://github.com/SoleP" target="blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+                
         <div class="BackToTop-container"> 
 
             <a class="arrowUp" >
@@ -502,6 +460,7 @@
                 <i class="fas fa-angle-double-up"></i>
             </a>
         </div>  
+            
         <!--  ========= Boton up  =========  -->
 
         <div class="arrow-container">
@@ -514,10 +473,14 @@
                     </svg>
                 </a>
             </div>
-          </div>
+        </div>
 
-        <!--  ========= Boton up  =========  -->
+        <!--  ========= END Boton up  =========  -->
 
     </footer>
+
+    <!--  ========= END Footer  =========  -->
+
 </body>
+
 </html> 
