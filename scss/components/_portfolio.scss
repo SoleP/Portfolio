@@ -144,6 +144,10 @@ input[type="radio"][id="metal"]:checked ~ .packaging {
 .gallery-image .each-item{
     position:relative;
     overflow:hidden;
+    border: 1px solid #BFBFBF;
+    border-radius: 10px;
+    box-shadow: $shadow-port;
+    
 }
 
 .gallery-image:hover .cap2, .gallery-image:hover .cap1{
