@@ -9,6 +9,11 @@
     font-size: 32px;
     }
 
+    @media screen and (max-width: 768px){
+        text-align: center;
+    }
+    
+
     p {
         font-size: 15px;
         color: $bg-gr-opa;

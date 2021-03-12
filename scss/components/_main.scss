@@ -25,11 +25,18 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     font-weight: 400;
-    color: $txt-color;
+    
     line-height: 1.8;
     margin: 0;
     }
 
+}
+
+
+.breadcrumb {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4%;
 }
 
  /* ========= FIN Generales a toda la pagina  ========= */
