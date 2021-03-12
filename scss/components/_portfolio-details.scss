@@ -1,11 +1,12 @@
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
+/* ========= Portfolio Details ========= */
+
+
 #portfolio-container {
 
     
     .portfolio-details {
         padding-top: 0;
+        margin-bottom: 5%;
         
         .portfolio-details-slider {
             align-items: center;
@@ -13,7 +14,9 @@
             .photo-slide {
                 img {
                 width: 90%;
-                border-radius: 5px;
+                border-radius: 10px;
+                border: 1px solid #BFBFBF;
+                box-shadow: $shadow;
                 }
             }
           

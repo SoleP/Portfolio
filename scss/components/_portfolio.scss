@@ -55,7 +55,7 @@ input[type="radio"]:checked + label{
 
 /*Filtros*/
 
-input[type="radio"][id="renders"]:checked ~ .furniture,
+input[type="radio"][id="renders"]:checked ~ .stands,
 input[type="radio"][id="renders"]:checked ~ .prototypes,
 input[type="radio"][id="renders"]:checked ~ .packaging,
 input[type="radio"][id="renders"]:checked ~ .metal {
@@ -67,10 +67,10 @@ input[type="radio"][id="renders"]:checked ~ .metal {
     transition: .5s;
 }
 
-input[type="radio"][id="furniture"]:checked ~ .renders,
-input[type="radio"][id="furniture"]:checked ~ .prototypes,
-input[type="radio"][id="furniture"]:checked ~ .packaging,
-input[type="radio"][id="furniture"]:checked ~ .metal {
+input[type="radio"][id="stands"]:checked ~ .renders,
+input[type="radio"][id="stands"]:checked ~ .prototypes,
+input[type="radio"][id="stands"]:checked ~ .packaging,
+input[type="radio"][id="stands"]:checked ~ .metal {
     width: 0;
     height: 0;
     padding: 0;
@@ -80,7 +80,7 @@ input[type="radio"][id="furniture"]:checked ~ .metal {
 }
 
 input[type="radio"][id="prototypes"]:checked ~ .renders,
-input[type="radio"][id="prototypes"]:checked ~ .furniture,
+input[type="radio"][id="prototypes"]:checked ~ .stands,
 input[type="radio"][id="prototypes"]:checked ~ .packaging,
 input[type="radio"][id="prototypes"]:checked ~ .metal {
     width: 0;
@@ -92,7 +92,7 @@ input[type="radio"][id="prototypes"]:checked ~ .metal {
 }
 
 input[type="radio"][id="packaging"]:checked ~ .renders,
-input[type="radio"][id="packaging"]:checked ~ .furniture,
+input[type="radio"][id="packaging"]:checked ~ .stands,
 input[type="radio"][id="packaging"]:checked ~ .prototypes,
 input[type="radio"][id="packaging"]:checked ~ .metal {
     width: 0;
@@ -103,7 +103,7 @@ input[type="radio"][id="packaging"]:checked ~ .metal {
     transition: .5s;
 }
 input[type="radio"][id="metal"]:checked ~ .renders,
-input[type="radio"][id="metal"]:checked ~ .furniture,
+input[type="radio"][id="metal"]:checked ~ .stands,
 input[type="radio"][id="metal"]:checked ~ .prototypes,
 input[type="radio"][id="metal"]:checked ~ .packaging {
     width: 0;
