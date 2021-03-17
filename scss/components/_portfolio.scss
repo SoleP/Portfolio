@@ -1,18 +1,25 @@
 /* ========= PORTFOLIO =============*/
 
-.clr {
+.portfolio .clr {
     clear: both;
 }
 
-.gallery-wrap {
+.portfolio .gallery-wrap {
     width: 90%;
     margin: 0 auto;
     text-align: center;
 }
 
-.gallery-wrap h1 {
+.portfolio .gallery-wrap h1 {
     letter-spacing: 4px;
 }
+
+@media screen and (max-width: 768px){
+    .portfolio .gallery-wrap .portfolio-EN {
+        width: 100%;
+    }
+}
+
 
 label {
     width: 10%;
@@ -139,6 +146,7 @@ input[type="radio"][id="metal"]:checked ~ .packaging {
     p {
         font-size: large;
         line-height: 1.2;
+        $txt-color
     }
 }
 
@@ -209,7 +217,7 @@ input[type="radio"][id="metal"]:checked ~ .packaging {
     }
 
     a {
-        color: $txt-gr;
+        color: $txt-color;
         text-decoration: none;
     }
 
