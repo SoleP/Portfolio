@@ -9,12 +9,19 @@
    
     .container-fluid{
 
-        #language {        
+        #language {   
+            a{
+                &:hover{
+                background-color: $bg-solid !important; 
+                border-radius: 2px; 
+                cursor: pointer;
+                } 
+            }   
+        }
 
-            &:hover {
-                    color: $bg-solid; /*No toma el color*/
-                    cursor: pointer;
-            }
+        .navbar-toggler {
+            background-color: white;
+            border: none;
         }
         
         .button {
@@ -34,18 +41,16 @@
             justify-content: center;
 
             li{
-                &:hover{
-                    color: $bg-solid !important;  /*No toma el color*/
-                    cursor: pointer;
-                }
-
                 a{
-                    &:active{
-                    color: $bg-solid !important; 
+                    &:hover{
+                    background-color: $bg-solid !important; 
+                    border-radius: 2px; 
+                    cursor: pointer;
                     } 
-                }
-                
+                } 
+                               
             }
+
         }
 
         #socialMedia{
@@ -81,8 +86,8 @@
         }
        
     }
-}
 
+}
 
 
 #lang-icon{

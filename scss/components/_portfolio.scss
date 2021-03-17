@@ -125,6 +125,7 @@ input[type="radio"][id="metal"]:checked ~ .packaging {
 
     @media screen and (max-width: 768px) {
         height: auto;
+        width: 30%;
     }
 
     img {
@@ -133,6 +134,11 @@ input[type="radio"][id="metal"]:checked ~ .packaging {
         object-fit: cover;
         transition: .5s;
         border: 10px;
+    }
+
+    p {
+        font-size: large;
+        line-height: 1.2;
     }
 }
 
@@ -172,12 +178,12 @@ input[type="radio"][id="metal"]:checked ~ .packaging {
 
         h3 {
             @media screen and (max-width: 768px){
-                font-size: inherit;
+                font-size: initial;
+                margin-top: -8px;
             }
         }
         p {
             color: $subtxt-color;
-
             @media screen and (max-width: 768px){
                 display: none;
             }
@@ -205,10 +211,13 @@ input[type="radio"][id="metal"]:checked ~ .packaging {
     a {
         color: $txt-gr;
         text-decoration: none;
-    
-        p{
+    }
+
+    p {
+        @media screen and (max-width: 768px){
+            font-size: initial;
+            line-height: 1.2;
             color: $txt-color;
-            font-size: 1em;
         }
     }
 }

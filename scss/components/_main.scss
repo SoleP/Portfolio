@@ -37,6 +37,15 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-right: 4%;
+
+    a {
+        color: $bg-solid-light;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            color: $bg-solid-light;
+        }
+    }
 }
 
  /* ========= FIN Generales a toda la pagina  ========= */

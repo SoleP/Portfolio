@@ -2,15 +2,27 @@
 /* ============= ABOUT ME ============= */
 #about {
     display: flex;
+    @media screen and (max-width: 768px){
+       display: grid;
+    }
     
     p {
         color: $txt-gr;
     }
 
+    .right {
+        @media screen and (max-width: 768px){
+            width: 90%;
+            justify-self: center;
+        }
+    }
+
     .left {
         padding-left: 10%;
         @media screen and (max-width: 768px){
-        order: 3;
+            order: 3;
+            padding: 10px 20px;
+            width: 100%;
         }
         .row {
             height: 50%;
@@ -53,14 +65,14 @@
                 }
 
                 @media screen and (max-width: 768px){
-                padding-right: 20px;
-                font-size: .9em;
-                text-align: justify;
-                padding-left: 0%;
-                line-height: 25px;
+                    font-size: 0.9em;
+                    text-align: justify;
+                    line-height: 25px;
+                    width: 100%;
                 }
             }
             .readMore {
+               
                 .button-v {
                     background-color: $bg-button;
                     border-color: transparent;
@@ -70,9 +82,9 @@
                     transition: 0.5s;
 
                     @media screen and (max-width: 768px){
-                        background-color: $bg-button;
-                        margin-left: 3em;
-                        margin-top: 5px;
+                        margin: 10px 0;
+                        justify-self: center;
+                        width: 100%;
                     }
                     
                     &:after {
