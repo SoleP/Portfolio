@@ -393,20 +393,25 @@ body p {
 
 /* =========  FIN Skills =========  */
 /* ========= PORTFOLIO =============*/
-.clr {
+.portfolio .clr {
   clear: both;
 }
 
-.gallery-wrap {
+.portfolio .gallery-wrap {
   width: 90%;
   margin: 0 auto;
   text-align: center;
 }
 
-.gallery-wrap h1 {
+.portfolio .gallery-wrap h1 {
   letter-spacing: 4px;
 }
 
+@media screen and (max-width: 768px) {
+  .portfolio .gallery-wrap .portfolio-EN {
+    width: 100%;
+  }
+}
 label {
   width: 10%;
   border: 0.1em solid #004d4d;
@@ -530,6 +535,7 @@ input[type=radio][id=metal]:checked ~ .packaging {
 .gallery-image p {
   font-size: large;
   line-height: 1.2;
+  color: white;
 }
 
 /*Hover Section*/
@@ -594,7 +600,7 @@ input[type=radio][id=metal]:checked ~ .packaging {
   }
 }
 .cap2 a {
-  color: #343a40;
+  color: white;
   text-decoration: none;
 }
 @media screen and (max-width: 768px) {
