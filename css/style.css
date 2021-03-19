@@ -152,17 +152,27 @@ body p {
 
 /* ========= TITLE  ========= */
 #title {
-  background-image: url(/bg.png);
-  background-color: rgba(44, 38, 38, 0.5);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   padding: 50px;
   margin-bottom: 2em;
   z-index: -1;
   text-align: center;
   text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  /*Background*/
+  background: linear-gradient(-45deg, rgba(0, 77, 77, 0.8), #0b8686, #7e8388, #343a40);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 #title .name {
   font-size: 3em;
@@ -313,6 +323,11 @@ body p {
   margin: 40px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .skills {
+    order: 4;
+  }
+}
 .skills .feat-item {
   padding: 0;
   margin: 30px 0;

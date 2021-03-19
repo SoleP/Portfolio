@@ -7,20 +7,33 @@
 
 /* ========= TITLE  ========= */
  
-
  
 #title {
-    background-image: url(/bg.png);
-    background-color: $bg-gr-opa;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
     width: 100%;
     padding: 50px; 
     margin-bottom: 2em;  
     z-index: -1; 
     text-align: center;
     text-shadow: $shadow;
+    
+    /*Background*/
+    background: linear-gradient(-45deg, $bg-opa, $bg-solid-light, $txt-gr-light, $txt-gr);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+   
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
 
     .name {
         @extend %header ;
