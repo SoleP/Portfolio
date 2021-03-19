@@ -522,7 +522,7 @@ input[type=radio][id=metal]:checked ~ .packaging {
 @media screen and (max-width: 768px) {
   .gallery-image {
     height: auto;
-    width: 30%;
+    width: 48%;
   }
 }
 .gallery-image img {
@@ -582,6 +582,17 @@ input[type=radio][id=metal]:checked ~ .packaging {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .cap1 .h3-mob {
+    font-size: x-large;
+    margin-top: -8px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cap1 .p-mob {
+    display: block;
+  }
+}
 
 .cap2 {
   position: absolute;
@@ -608,6 +619,15 @@ input[type=radio][id=metal]:checked ~ .packaging {
     font-size: initial;
     line-height: 1.2;
     color: white;
+    margin-top: 8px;
+  }
+}
+.cap2 .p-see-mob {
+  font-size: x-large;
+}
+@media screen and (max-width: 768px) {
+  .cap2 .p-see-mob {
+    margin-top: 24px;
   }
 }
 

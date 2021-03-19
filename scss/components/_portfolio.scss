@@ -132,7 +132,7 @@ input[type="radio"][id="metal"]:checked ~ .packaging {
 
     @media screen and (max-width: 768px) {
         height: auto;
-        width: 30%;
+        width: 48%;
     }
 
     img {
@@ -184,18 +184,31 @@ input[type="radio"][id="metal"]:checked ~ .packaging {
         height: 75%;        
     }
 
-        h3 {
-            @media screen and (max-width: 768px){
-                font-size: initial;
-                margin-top: -8px;
-            }
+    h3 {
+        @media screen and (max-width: 768px){
+            font-size: initial;
+            margin-top: -8px;
         }
-        p {
-            color: $subtxt-color;
-            @media screen and (max-width: 768px){
-                display: none;
-            }
+    }
+    p {
+        color: $subtxt-color;
+        @media screen and (max-width: 768px){
+            display: none;
         }
+    }
+
+
+    .h3-mob {
+        @media screen and (max-width: 768px){
+            font-size: x-large;
+            margin-top: -8px;
+        }
+    }
+    .p-mob {
+        @media screen and (max-width: 768px){
+            display: block;
+        }
+    }
 }   
 
 
@@ -226,6 +239,14 @@ input[type="radio"][id="metal"]:checked ~ .packaging {
             font-size: initial;
             line-height: 1.2;
             color: $txt-color;
+            margin-top: 8px;
+        }
+    }
+    .p-see-mob {
+        font-size: x-large;
+      
+        @media screen and (max-width: 768px){
+            margin-top: 24px;
         }
     }
 }
