@@ -342,7 +342,7 @@ body p {
   background-color: white;
   -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.04);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.04);
-  height: 320px;
+  height: 280px;
 }
 .skills .feat-item .text-center .icon {
   width: 90px;
@@ -350,7 +350,6 @@ body p {
   line-height: 105px;
   color: #777;
   font-size: 60px;
-  /* border-radius: 50%; */
   margin-bottom: 25px;
   position: relative;
   z-index: 3;
@@ -723,44 +722,24 @@ input[type=radio][id=metal]:checked ~ .packaging {
 /* ========= FIN Footer ========= */
 /* ======== Arrow UP ==========*/
 /* VER COMO HACER: 
--Que aparezca cuando scrolle y desaparezca abajo ( opacidad y JS) 
 -Que cambie de color cuando pasa por los fondos
 */
-.arrow-container .arrow-content {
+#myBtn {
+  display: none;
   position: fixed;
-  right: -2em;
-  bottom: -1em;
-  transform: translate(-50%, -50%);
-  opacity: 1;
-  pointer-events: auto;
-  transition: 0.4s;
+  bottom: 20px;
+  right: 12px;
   z-index: 99;
+  border: none;
+  background-color: #343a40;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 18px;
 }
-.arrow-container .arrow-content #more-arrows {
-  width: 75px;
-  height: 65px;
-  transform: rotate(180deg);
-}
-.arrow-container .arrow-content #more-arrows:hover polygon {
-  fill: #343a40;
-  border: solid #343a40;
-  transition: all 0.2s ease-out;
-}
-.arrow-container .arrow-content #more-arrows:hover polygon.arrow-bottom {
-  transform: translateY(-18px);
-}
-.arrow-container .arrow-content #more-arrows:hover polygon.arrow-top {
-  transform: translateY(18px);
-}
-.arrow-container .arrow-content #more-arrows polygon {
-  fill: #343a40;
-  transition: all 0.2s ease-out;
-}
-.arrow-container .arrow-content #more-arrows polygon.arrow-middle {
-  opacity: 0.75;
-}
-.arrow-container .arrow-content #more-arrows polygon.arrow-top {
-  opacity: 0.5;
+#myBtn:hover {
+  background-color: #004d4d;
 }
 
 /* ======== Arrow UP ==========*/
@@ -877,7 +856,7 @@ input[type=radio][id=metal]:checked ~ .packaging {
   text-align: center;
 }
 #portfolio-container .side-text .portfolio-description .descripcion {
-  padding: 0;
+  padding: 0 15px;
   color: #343a40;
   text-align: justify;
 }

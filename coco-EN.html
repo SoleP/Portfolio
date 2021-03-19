@@ -348,29 +348,38 @@
         </div>
 
                 
-        <div class="BackToTop-container"> 
+       <!--  ========= Back to Top  =========  -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
 
-            <a class="arrowUp" >
-                <i class="fas fa-angle-double-up"></i>
-            </a>
-
-            <a href="#title" class="backTopText text-secondary" >
-                <p>Back to Top</p>
-            </a> 
-
-            <a class="arrowUp">
-                <i class="fas fa-angle-double-up"></i>
-            </a>
-        </div>  
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
             
-       <!--  ========= END Boton up  =========  -->
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+            
+       <!--  ========= END Back to Top  =========  -->
 
     </footer>
 
     <!--  ========= END Footer  =========  -->
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     

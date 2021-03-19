@@ -2,64 +2,28 @@
   
 
 /* VER COMO HACER: 
--Que aparezca cuando scrolle y desaparezca abajo ( opacidad y JS) 
 -Que cambie de color cuando pasa por los fondos
 */
-
-
-.arrow-container {
-
-    .arrow-content {
-        position: fixed;
-        right: -2em;
-        bottom: -1em;
-        transform: translate(-50%, -50%);
-        opacity: 1;
-        pointer-events: auto;
-        transition: .4s;
-        z-index: 99;
-
- 
-
-        #more-arrows {
-            width: 75px;
-            height: 65px;
-            transform: rotate(180deg);
-            &:hover {        
-                polygon {
-                    fill: $txt-gr;
-                    border: solid $txt-gr;
-                    transition: all .2s ease-out;
-                    
-            
-                    &.arrow-bottom {
-                    transform: translateY(-18px);
-                    }
-            
-                    &.arrow-top {
-                    transform: translateY(18px);
-                    }
-                    
-                }
-            
-            }
-        
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 12px;
+    z-index: 99;
+    border: none;
+    background-color: $txt-gr;
+    color: $txt-color;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 18px;
     
-            polygon {
-                fill: $txt-gr;
-                transition: all .2s ease-out;
-                            
-                &.arrow-middle {
-                opacity: 0.75;
-                }
-            
-                &.arrow-top {
-                opacity: 0.5
-                }
-            }
-        }
+    &:hover {
+        background-color: $bg-solid;
+   
     }
 }
+
 
 
 /* ======== Arrow UP ==========*/
