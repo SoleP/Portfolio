@@ -7,6 +7,11 @@
     .portfolio-details {
         padding-top: 0;
         margin-bottom: 5%;
+
+        .video-container {
+        justify-content: center;
+        display: flex;
+        }
         
         .portfolio-details-slider {
             align-items: center;
@@ -18,6 +23,11 @@
                 border: 1px solid #BFBFBF;
                 box-shadow: $shadow;
                 }
+                .video {
+                    width: 100%;
+                    height: 100%;
+                }
+                
             }
           
             .swiper-pagination {
