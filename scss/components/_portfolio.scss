@@ -52,74 +52,8 @@ label:hover {
     } 
 }
 
-input[type="radio"] {
-    display: none;
-}
-input[type="radio"]:checked + label{
-    background: $bg-solid;
-    color: $txt-color;
-}
 
-/*Filtros*/
 
-input[type="radio"][id="renders"]:checked ~ .stands,
-input[type="radio"][id="renders"]:checked ~ .prototypes,
-input[type="radio"][id="renders"]:checked ~ .packaging,
-input[type="radio"][id="renders"]:checked ~ .metal {
-    width: 0;
-    height: 0;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    transition: .5s;
-}
-
-input[type="radio"][id="stands"]:checked ~ .renders,
-input[type="radio"][id="stands"]:checked ~ .prototypes,
-input[type="radio"][id="stands"]:checked ~ .packaging,
-input[type="radio"][id="stands"]:checked ~ .metal {
-    width: 0;
-    height: 0;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    transition: .5s;
-}
-
-input[type="radio"][id="prototypes"]:checked ~ .renders,
-input[type="radio"][id="prototypes"]:checked ~ .stands,
-input[type="radio"][id="prototypes"]:checked ~ .packaging,
-input[type="radio"][id="prototypes"]:checked ~ .metal {
-    width: 0;
-    height: 0;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    transition: .5s;
-}
-
-input[type="radio"][id="packaging"]:checked ~ .renders,
-input[type="radio"][id="packaging"]:checked ~ .stands,
-input[type="radio"][id="packaging"]:checked ~ .prototypes,
-input[type="radio"][id="packaging"]:checked ~ .metal {
-    width: 0;
-    height: 0;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    transition: .5s;
-}
-input[type="radio"][id="metal"]:checked ~ .renders,
-input[type="radio"][id="metal"]:checked ~ .stands,
-input[type="radio"][id="metal"]:checked ~ .prototypes,
-input[type="radio"][id="metal"]:checked ~ .packaging {
-    width: 0;
-    height: 0;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    transition: .5s;
-}
 
 
 .gallery-image {
@@ -132,11 +66,11 @@ input[type="radio"][id="metal"]:checked ~ .packaging {
 
     @media screen and (max-width: 768px) {
         height: auto;
-        width: 48%;
+        width: 90%;
     }
 
     img {
-        width: 100%;
+        width: 95%;
         height: 100%;
         object-fit: cover;
         transition: .5s;
@@ -171,7 +105,7 @@ input[type="radio"][id="metal"]:checked ~ .packaging {
 .cap1{
     position:absolute;
     width:100%;
-    height:70%;
+    height: 100%;
     background:rgba(255, 255, 255, 0.5);
     top:0px;
     left:-100%;
@@ -186,15 +120,12 @@ input[type="radio"][id="metal"]:checked ~ .packaging {
 
     h3 {
         @media screen and (max-width: 768px){
-            font-size: initial;
+            font-size: 2em;
             margin-top: -8px;
         }
     }
     p {
-        color: $subtxt-color;
-        @media screen and (max-width: 768px){
-            display: none;
-        }
+        color: $subtxt-color;        
     }
 
 
@@ -234,10 +165,10 @@ input[type="radio"][id="metal"]:checked ~ .packaging {
 
     p {
         @media screen and (max-width: 768px){
-            font-size: initial;
+            font-size: 1.5em;
             line-height: 1.2;
             color: $txt-color;
-            margin-top: 8px;
+            margin-top: 26px;
         }
     }
     .p-see-mob {
@@ -251,42 +182,55 @@ input[type="radio"][id="metal"]:checked ~ .packaging {
 
 /* ========== FIN PORTFOLIO =========*/
 
+
+
+
+
+
 /* Portfolio Section */
 #portfolio {
-	padding: 120px 0;
-	background: #f6f6f6;
+	padding: 25px 0;
 }
 .categories {
 	padding-bottom: 30px;
 	text-align: center;
+}
+.type {
+    display: flex;
+    justify-content: center;
 }
 ul.cat li {
 	display: inline-block;
 }
 ol.type li {
 	display: inline-block;
-	margin-left: 20px;
+	min-width: fit-content;
+    margin: 14px 0;
 }
 ol.type li a {
 	border: 1px solid #777;
 	color: #555;
 	padding: 8px 20px;
+	text-decoration: none;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+	border-radius: 5px;
 }
 ol.type li a.active {
-	background: #222;
-	border: 1px solid #222;
+	background: teal;
+	border: 1px solid teal;
 	color: #fff;
 }
 ol.type li a:hover {
-	background: #222;
-	border: 1px solid #222;
+	background: teal;
+	border: 1px solid teal;
 	color: #fff;
 }
 .isotope-item {
-	z-index: 2
+	z-index: 2;
+	margin: 1%;
 }
 .isotope-hidden.isotope-item {
-	z-index: 1
+	z-index: 1;
 }
 .isotope, .isotope .isotope-item {
 	/* change duration value to whatever you like */
@@ -321,91 +265,13 @@ ol.type li a:hover {
 	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
-.portfolio-item:hover {
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	-o-transform: scale(1.1);
-	transform: scale(1.1);
-}
-.portfolio-item .hover-bg {
-	height: 195px;
+
+.portfolio-item .hover-bg {	
 	overflow: hidden;
 	position: relative;
 }
-.hover-bg .hover-text {
-	position: absolute;
-	text-align: center;
-	margin: 0 auto;
-	color: #ffffff;
-	background: rgba(0, 0, 0, 0.66);
-	padding: 30% 0 0 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: all 0.5s;
-}
-.hover-bg .hover-text>h4 {
-	text-transform: uppercase;
-	opacity: 0;
-	color: #fff;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-	transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>h4 {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-}
-.hover-bg .hover-text>i {
-	opacity: 0;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-	transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>i {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-}
-.hover-bg:hover .hover-text {
-	opacity: 1;
-}
-#portfolio i.fa {
-	font-size: 20px;
-	padding: 5px;
-	color: #E87E04;
-}
 
-.gallery-image:hover .cap2, .gallery-image:hover .cap1{
-    left:0px;
+.gallery-image .hover-bg{
+    border: 1px solid #BFBFBF;
+    border-radius: 10px;
 }
-
-.gallery-image .cap1{
-    position:absolute;
-    width:100%;
-    height:70%;
-    background:rgba(255, 255, 255, 0.5);
-    top:0px;
-    left:-100%;
-    padding: 2em 1em;
-    transition: all .5s;
-    font-family: 'Lato', sans-serif;
-    color: black;
-}   
-
-
-.gallery-image .cap2{
-    position:absolute;
-    width:100%;
-    height:30%;
-    background: teal;
-    bottom:0px;
-    left:100%;
-    padding: 2em 1em;
-    transition: all .5s;
-}
-
