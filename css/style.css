@@ -576,6 +576,10 @@ label:hover {
   padding: 25px 0;
 }
 
+#portfolio .section-title h2 {
+  color: #004d4d;
+}
+
 .categories {
   padding-bottom: 30px;
   text-align: center;
